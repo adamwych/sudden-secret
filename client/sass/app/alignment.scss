@@ -1,0 +1,30 @@
+/**
+ * This file is part of the Sudden Secret web application.
+ * Full license text can be found in LICENSE file in the root directory.
+ */
+.display-inline-block {
+    display: inline-block;
+}
+
+.align-left {
+    float: left;
+}
+
+.align-right {
+    margin-left: auto;
+    float: right;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}

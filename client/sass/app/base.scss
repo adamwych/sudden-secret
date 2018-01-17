@@ -1,0 +1,74 @@
+/**
+ * This file is part of the Sudden Secret web application.
+ * Full license text can be found in LICENSE file in the root directory.
+ */
+body, html {
+    width: 100%;
+    height: 100%;
+
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Lato';
+    font-size: 15px;
+    line-height: (20px / 15px);
+
+    background-color: #329cec;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.homepage-form, .secret-sent-card {
+    z-index: 1;
+    width: 680px;
+    max-height: 480px;
+
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.25);
+
+    will-change: transform;
+}
+
+.secret-sent-card {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    padding: 3rem;
+
+    .text {
+        color: #9a9a9a;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .button {
+        display: inline-block;
+        font-size: 1.15rem;
+    }
+}
+
+.no-connection-message {
+    position: fixed;
+    display: flex;
+
+    width: 100%;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.55);
+    z-index: 10;
+
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    text-align: center;
+
+    .fa {
+        font-size: 2.75rem;
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,61 @@
+/**
+ * This file is part of the Sudden Secret web application.
+ * Full license text can be found in LICENSE file in the root directory.
+ */
+
+/**
+ * Creates a new color style for '.button'.
+ *
+ * @param name name of the color
+ * @param backgroundColor
+ * @param textColor
+ */
+@mixin create-button-style($name, $backgroundColor, $textColor) {
+    .button-#{$name} {
+        background-color: $backgroundColor;
+        color: $textColor;
+
+        &:hover {
+            background-color: darken($backgroundColor, 8%);
+        }
+
+        &:active {
+            background-color: darken($backgroundColor, 15%);
+        }
+
+        &.disabled {
+            background-color: lighten($backgroundColor, 20%) !important;
+        }
+    }
+}
+
+.button {
+    border: 0;
+    padding: 0.8rem 1rem;
+    border-radius: 0.3rem;
+    transition: 0.1s ease-out;
+    outline: none !important;
+
+    font-weight: 600;
+    font-size: 14px;
+
+    > .button-icon {
+        display: inline;
+        padding-right: 0.65rem;
+        font-size: 0.8em;
+    }
+
+    &:hover {
+        transition: 0.1s ease-out;
+        cursor: pointer;
+    }
+
+    &.disabled {
+        cursor: not-allowed;
+    }
+}
+
+@include create-button-style('red', #ec3232, #ffffff)
+@include create-button-style('blue', #329cec, #ffffff)
+@include create-button-style('green', #38c942, #ffffff)
+@include create-button-style('gray', #eaeaea, #383838)
