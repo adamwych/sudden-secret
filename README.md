@@ -1,6 +1,8 @@
 # Sudden Secret
 
-![alt text](https://i.imgur.com/Uu7rLLS.png "Logo Title Text 1")
+![alt text](https://i.imgur.com/Uu7rLLS.png "Logo")
+
+[Click here to see it live!](https://adamwychowaniec.pl/demo/sudden-secret/)
 
 This repository contains source code of the server and client application of Sudden Secret.
 Sudden Secret is a web application that can be used to anonymously send a message to random people, who are also on the website at the moment.
